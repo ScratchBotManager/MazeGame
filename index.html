@@ -1,15 +1,15 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <script>
-    import * as THREE from 'https://threejs.org/build/three.js';
-     
-      class Maze {
-        
-        contructor() {
-         this._Initialize();
-        }
-        
-        _Initialize() {
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+		<script>
 			const scene = new THREE.Scene();
 			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
@@ -34,10 +34,6 @@
 			};
 
 			animate();
-        }
-      }
-    </script>
-  </head>
-  <body>
-  </body>
+		</script>
+	</body>
 </html>
