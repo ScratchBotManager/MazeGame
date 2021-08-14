@@ -18,10 +18,7 @@
 			document.body.appendChild( renderer.domElement );
 
 			const geometry = new THREE.BoxGeometry();
-texture = THREE.ImageUtils.loadTexture('https://ibid-11962.github.io/Windows-95-3D-Maze-Screensaver/wall.bmp', {}, function() {
-    renderer.render(scene);
-});
-			const cube = new THREE.Mesh( geometry, texture );
+			const cube = new THREE.Mesh( geometry );
 			scene.add( cube );
 
 			camera.position.z = 5;
